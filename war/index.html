@@ -1,0 +1,32 @@
+<html>
+
+	<head>
+		<script src="scripts/soundmanager2.js"></script>
+		<script>
+			soundManager.url = '/soundmanager/soundmanager2.swf';
+			soundManager.url = '/soundmanager/soundmanager2_debug.swf';
+			soundManager.flashVersion = 9;
+			soundManager.useFlashBlock = false;
+			soundManager.debugFlash = true;
+			soundManager.onready(function()) {
+
+			});
+		</script>
+		<link rel="stylesheet" href="../template/template.css" media="screen" />		
+		<link rel="stylesheet" href="css/animation.css" media="screen" />		
+		<script type="text/javascript" src="scripts/soundmanager2-nodebug-jsmin.js"></script>		
+		<script type="text/javascript" src="scripts/animation.js"></script>		</head>
+
+	<p>Wow.  It is so nice not having a big heavy IDE!</p>
+	
+	<p style="margin:0px;padding:0px"> 		
+		<input id="useMouse" name="usemouse" value="usemouse" type="checkbox"> Throw from mouse	</p>	
+		<p style="margin:0px;padding:0px">		
+			<button id="b-start" onclick="startAnimation()" disabled="disabled">Start</button>		
+			<button id="b-stop" onclick="stopAnimation()" disabled="disabled">Stop</button>	
+		</p>
+
+	<div id="ball-container" class="balls">		 
+		<img src="image/ball.gif" alt="" />	
+	</div>
+</html>
